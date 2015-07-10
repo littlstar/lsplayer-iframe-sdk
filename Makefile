@@ -34,7 +34,7 @@ define BUILD_PARENT_DIRECTORY
 endef
 
 ## default target
-default: build dist
+default: build dist doc
 
 ## build target
 build: build/build.js

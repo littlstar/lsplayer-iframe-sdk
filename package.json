@@ -1,6 +1,6 @@
 {
   "name": "lsplayer-iframe-sdk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "LSPlayer iFrame SDK",
   "main": "index.js",
   "scripts": {
