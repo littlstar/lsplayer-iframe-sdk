@@ -1,0 +1,22 @@
+{
+  "name": "lsplayer-iframe-sdk",
+  "version": "0.0.1",
+  "description": "LSPlayer iFrame SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": ":"
+  },
+  "keywords": [
+    "littlstar",
+    "lsplayer",
+    "sdk",
+    "rpc",
+    "iframe"
+  ],
+  "author": "Joseph Werle <werle@littlstar.com>",
+  "license": "MIT",
+  "dependencies": {
+    "duo": "*",
+    "uglifyjs": "^2.4.10"
+  }
+}

@@ -1,0 +1,5 @@
+(function (global, opts) {
+
+}(this, {
+
+}));
