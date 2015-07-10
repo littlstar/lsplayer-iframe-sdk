@@ -26,7 +26,7 @@ DUOFLAGS += -C --stdout --type js
 UGLIFYFLAGS += --compress --mangle
 
 ## dist target file name
-DIST_TARGET ?= dist/lsplayer-iframe-sdk.js
+DIST_TARGET ?= dist/sdk.js
 
 ## ensures parent directory of target is built
 define BUILD_PARENT_DIRECTORY

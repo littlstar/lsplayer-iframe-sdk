@@ -15,6 +15,15 @@ to be interacted with. If there are multiple iframes on the page then
 the function will be called for each providing a `player` and `state`
 object unique to that player frame.
 
+## Including the SDK on your web page
+
+You can include the Javascript on your web page by embedding the
+following HTML in the head of your document.
+
+```html
+<script type="text/javascript" charset="utf-8" src="http://360.littlstar.com/ls-player/embed/sdk.js"></script>
+```
+
 ## Example
 
 ```js
