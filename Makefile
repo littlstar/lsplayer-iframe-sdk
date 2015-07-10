@@ -11,6 +11,9 @@ NPM ?= npm
 ## uglifyjs command
 UGLIFY := node_modules/.bin/uglifyjs
 
+## current working directory
+CWD = $(shell pwd)
+
 ## main entry point
 MAIN ?= index.js
 ## source files
@@ -58,6 +61,9 @@ node_modules: package.json
 
 ## ensures source dependencies are built
 $(SRC): node_modules
+
+doc: node_modules $(SRC)
+	./generate_documentation.sh $(CWD) $(@)
 
 ## cleans build, node_modules, and components
 .PHONY: clean

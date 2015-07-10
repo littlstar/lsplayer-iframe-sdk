@@ -7,6 +7,11 @@
     <script type="text/javascript" charset="utf-8">
       function OnLSPlayerFrameReady (player, state) {
         window.player = player;
+        console.log("Player %d is ready", player.id);
+        player.play();
+        player.on('timeupdate', function () {
+          console.log("current time = %d", state.currentTime);
+        });
       }
     </script>
   </head>

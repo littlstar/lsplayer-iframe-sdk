@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "duo": "*",
+    "jsdoc": "^3.3.2",
     "uglifyjs": "^2.4.10"
   }
 }
