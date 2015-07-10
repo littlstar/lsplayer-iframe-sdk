@@ -77,7 +77,7 @@ function LSPlayerRPC (iframe) {
 
   this.on('state', function (data) {
     // update state object when state is emitted
-    merge(self.state, data);
+    merge(state, data);
   });
 
   this.iframe.addEventListener('load', function () {
