@@ -91,7 +91,7 @@ function LSPlayerRPC (iframe) {
     self.gateway.call('initialize', function () {
       var fn = window[GLOBAL_CALLBACK_NAME];
       if ('function' == typeof fn) {
-        (self, self.state);
+        fn(self, state);
       } else {
         throw new TypeError("Expecting "+ GLOBAL_CALLBACK_NAME +" to be defined.");
       }
