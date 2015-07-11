@@ -9,16 +9,48 @@ var rpc = require('littlstar/frame-rpc@master')
   , Emitter = require('component/emitter')
   , domready = require('components/domready')
 
+/**
+ * Global callback function name.
+ *
+ * @private
+ * @const
+ * @type {String}
+ */
+
 const GLOBAL_CALLBACK_NAME = 'OnLSPlayerFrameReady';
+
+/**
+ * Iframe class name.
+ *
+ * @private
+ * @const
+ * @type {String}
+ */
 const IFRAME_CLASS_NAME = 'lsplayer-frame';
 
-// used to generate an id for the frame
+/**
+ * Frame count used to generate an id for the frame.
+ *
+ * @private
+ * @type {Number}
+ */
+
 var FRAME_COUNT = 0;
 
 // initialize when DOM s ready
 domready(InitializeFrameRPC);
 
-var pkg = require('./package.json');
+/**
+ * Packahe information.
+ *
+ * @private
+ * @const
+ * @type {Object}
+ */
+
+const pkg = require('./package.json');
+
+// emit package information
 console.info("%s@%s", pkg.name, pkg.version);
 
 /**
