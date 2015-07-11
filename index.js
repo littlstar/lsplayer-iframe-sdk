@@ -81,7 +81,7 @@ function LSPlayerRPC (iframe) {
   });
 
   this.iframe.addEventListener('load', function () {
-    window.gateway = self.gateway = rpc(window, iframe.contentWindow, self.origin, {
+    self.gateway = rpc(window, iframe.contentWindow, self.origin, {
       emit: function (event, data, cb) {
         self.emit(event, data);
         cb();
