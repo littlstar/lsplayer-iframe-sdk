@@ -21,7 +21,7 @@ You can include the Javascript on your web page by embedding the
 following HTML in the head of your document.
 
 ```html
-<script type="text/javascript" charset="utf-8" src="http://360.littlstar.com/ls-player/embed/sdk.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://360.littlstar.com/ls-player/embed/sdk.js" defer async></script>
 ```
 
 ## Example
