@@ -8,6 +8,7 @@ var rpc = require('littlstar/frame-rpc@master')
   , merge = require('yields/merge')
   , Emitter = require('component/emitter')
   , domready = require('components/domready')
+  , url = require('component/url')
 
 /**
  * Global callback function name.
@@ -102,7 +103,7 @@ function LSPlayerRPC (iframe) {
   this.iframe = iframe;
 
   /** Player iframe source URL instance. */
-  this.src = new window.URL(iframe.getAttribute('src'));
+  this.src = url.parse(iframe.getAttribute('src'));
 
   /** Player iframe origin. */
   this.origin = this.src.protocol + '//' + this.src.host;
